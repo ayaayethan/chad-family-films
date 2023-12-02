@@ -49,7 +49,7 @@ export default function NavBar() {
             </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-100">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-slate-900">
             <li>
               <Link href="/family" className="block py-2 px-3 text-slate-50 rounded hover:bg-blue-900 md:hover:bg-blue-950 hover:text-pink-500 md:p-0">Family</Link>
             </li>
