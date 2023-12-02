@@ -24,7 +24,7 @@ export default function RootLayout({
         <header className="shadow-lg">
           <NavBar />
         </header>
-        <main className="flex min-h-screen flex-col items-center justify-between">
+        <main className="flex min-h-screen min-w-screen flex-col items-center justify-between">
           {children}
         </main>
       </body>
