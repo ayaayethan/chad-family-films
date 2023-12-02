@@ -5,12 +5,16 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 export default function Home() {
   const slideLeft = () => {
     let slider: HTMLElement | null = document.getElementById('slider')
-    slider.scrollLeft = slider.scrollLeft - 400
+    if (slider) {
+      slider.scrollLeft = slider.scrollLeft - 400
+    }
   }
 
   const slideRight = () => {
     let slider: HTMLElement | null = document.getElementById('slider')
-    slider.scrollLeft = slider.scrollLeft + 400
+    if (slider) {
+      slider.scrollLeft = slider.scrollLeft + 400
+    }
   }
 
   return (
