@@ -4,6 +4,7 @@ import { Carousel } from 'flowbite-react'
 import { FaInstagram } from "react-icons/fa"
 import { FaYoutube } from "react-icons/fa"
 import { SiGofundme } from "react-icons/si"
+import { FaTiktok } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -16,9 +17,15 @@ export default function Home() {
         <h3 className="text-sm absolute bottom-0 left-0 right-0 mb-4">Based in Salinas, CA</h3>
       </article>
       <div>
-        <h1 className="font-bold text-3xl sm:text-5xl md:text-7xl my-10 md:my-16 text-center">Latest <span className="text-pink-500">Stuff</span></h1>
-        <div className="h-80 sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[900px] mx-2">
-          <Carousel slideInterval={5000}>
+        <h1 className="font-bold text-3xl sm:text-5xl md:text-7xl my-10 md:my-16 text-center">Watch Our <span className="text-pink-500">Latest Film!</span></h1>
+        <div className="h-60 sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[900px] mx-2">
+          <iframe src="https://www.youtube.com/embed/jJZypa0iPMs" className="h-full w-full rounded-md"></iframe>
+        </div>
+      </div>
+      <div>
+        <h1 className="font-bold text-3xl sm:text-5xl md:text-7xl my-10 md:my-16 text-center">Other <span className="text-pink-500">Stuff</span></h1>
+        <div className="h-60 sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[900px] mx-2">
+          <Carousel slide={false}>
             <iframe src="https://www.youtube.com/embed/3xedG21lsD0" className="h-full w-full"></iframe>
             <iframe src="https://www.youtube.com/embed/Gftxk1gwLlc" className="h-full w-full"></iframe>
             <iframe src="https://www.youtube.com/embed/66hCjybbQaU" className="h-full w-full"></iframe>
@@ -38,6 +45,9 @@ export default function Home() {
           </a>
           <a href="https://www.gofundme.com/f/chad-family-films?utm_campaign=p_lico+share-sheet&utm_medium=copy_link&utm_source=customer" target="_blank"  className="h-full w-full">
             <SiGofundme className="h-full w-full px-8 hover:text-pink-500"/>
+          </a>
+          <a href="https://www.tiktok.com/@chad.family.films" target="_blank"  className="h-full w-full">
+            <FaTiktok className="h-full w-full px-8 hover:text-pink-500"/>
           </a>
         </div>
       </div>

@@ -59,9 +59,9 @@ export default function NavBar() {
             <li>
               <Link href="/vlogs" className="block py-2 px-3 text-slate-50 rounded hover:bg-blue-900 md:hover:bg-blue-950 hover:text-pink-500 md:p-0">Vlogs</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/gallery" className="block py-2 px-3 text-slate-50 rounded hover:bg-blue-900 md:hover:bg-blue-950 hover:text-pink-500 md:p-0">Gallery</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contact" className="block py-2 px-3 text-slate-50 rounded hover:bg-blue-900 md:hover:bg-blue-950 hover:text-pink-500 md:p-0">Contact</Link>
             </li>
