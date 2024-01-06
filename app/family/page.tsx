@@ -34,9 +34,9 @@ export default function Family() {
     <div className="flex flex-col my-12 w-5/6">
       <h1 className="text-3xl text-center font-bold">Meet The<span className="text-pink-500"> Fam!</span></h1>
       <div>
-        {family.map(person => {
+        {family.map((person, idx) => {
           return (
-            <div className="bg-blue-900 rounded-md py-4 px-2 my-3 min-w-full shadow-lg">
+            <div key={idx} className="bg-blue-900 rounded-md py-4 px-2 my-3 min-w-full shadow-lg">
               <h2 className="text-lg text-center">{person.name}</h2>
               <p className="text-sm text-center">{person.about}</p>
             </div>
